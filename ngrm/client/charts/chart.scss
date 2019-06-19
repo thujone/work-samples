@@ -1,0 +1,135 @@
+.highcharts-container text,
+.highcharts-container span {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !important;
+}
+
+.highcharts-legend-item text,
+.highcharts-data-label text,
+.highcharts-axis-labels span,
+.highcharts-button text {
+  color: #5f6062 !important;
+  fill: #5f6062 !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  /* text-overflow: unset; */
+}
+
+.highcharts-data-label text,
+.highcharts-data-label text tspan {
+  font-size: 12px !important;
+  font-weight: bold !important;
+}
+
+.highcharts-drillup-button text {
+  color: #009AC7 !important;
+  fill: #009AC7 !important;
+  text-decoration: underline !important;
+}
+
+.highcharts-button rect {
+  fill: transparent !important;
+  stroke-width: 0;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels span {
+  white-space: normal !important;
+  text-align: center !important;
+  min-width: 65px;
+}
+
+.highcharts-point {
+  stroke-width: 0;
+}
+
+.filterable-column-chart {
+  background: white;
+}
+
+.filterable-chart-info.col-md-3 {
+  padding: 0 5px;
+}
+
+.filterable-chart-info h1 {
+  display: block;
+  width: 150%;
+  padding-top: 5px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  margin-bottom: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.filterable-chart-info > div {
+  height: 342px;
+}
+
+.filterable-chart-info .clickable-list {
+  height: 233px;
+}
+
+.filterable-chart.col-md-9 {
+  margin-top: 10px;
+  padding: 4px 0 0 0;
+}
+
+.filter-list .sort-header svg {
+  margin-left: 5px;
+}
+
+.filterable-chart-info svg.fa-sort-up,
+.filterable-chart-info svg.fa-sort-down {
+  color: #000;
+}
+
+.filter-results li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #888;
+  cursor: pointer;
+  width: 95%;
+}
+
+.filter-results li:hover {
+  color: #009AC7;
+}
+
+.filter-results li.active {
+  color: #009AC7;
+  font-weight: bold;
+}
+
+.filter-results li:last-of-type {
+  border-bottom: none;
+}
+
+.filter-input-wrapper {
+  width: 88%;
+  padding: 15px 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.filter-input {
+  width: 100%;
+  border-radius: 7px;
+  padding: 3px;
+  border-style: none;
+  border: 1px solid #ddd;
+}
+
+.clickable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.clickable-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  width: 8px;
+}
+
+.clickable-list::-webkit-scrollbar-thumb {
+  color: #777;
+  background: #888;
+  border-radius: 10px;
+  width: 8px;
+}

@@ -1,0 +1,55 @@
+Here is a technical summary and a modest proposal for implementing responsive web design for Virtual Lobby. Let me know if you have any questions or comments. I’m certainly not wedded to any ideas below.
+ 
+ 
+Responsive design has become an important aspect of modern web development. Half of the traffic on the internet today is mobile and tablet, and most users expect to be able to access websites on a variety of devices and browsers. From what I’ve heard, I believe there is a desire to have Virtual Lobby work on smartphones.
+ 
+There are a ton of front end frameworks for implementing responsiveness. The most popular, by far, is Bootstrap, which has been in use worldwide for over ten years. Other popular libraries include Foundations, Materialize, and Skeleton. These are all based on the same principle: you use pre-defined CSS3 media query breakpoints to apply different sets of styles based on the size of the browser viewport. However, this tried-and-true method is starting to look like an outdated way of doing things.
+ 
+There have been only a few ways of doing layout going back all the way to the beginning of the web:
+ 
+Table-based layout
+Float-based layout using CSS.  (Bootstrap and others operate on this type of layout.)
+Flexbox using CSS.  (A few flexbox-based responsive libraries have popped up recently, the most popular one being Bulmer.)
+CSS-Grid using CSS
+ 
+CSS-Grid is the first complete layout solution for the web. It’s meant to work in concert with Flexbox. CSS-Grid allows you to define layout in two dimensions – not only rows of content but also columns of content. Flexbox is geared for handling layout in one dimension, e.g., a list of items. CSS-Grid has been in development since 2011, and has enjoyed years of testing on all major browsers. It’s fully supported on all major browsers today (including MS Edge), and is fully native to CSS – meaning you can have responsive design today without using any external libraries at all. Grid will eventually become the standard used everywhere, but it’s just now starting to take hold. Part of the issue is that people are just so used to Bootstrap that it’s easier for them to resist change.
+ 
+As far as implementing CSS-Grid for Virtual Lobby, it would be fairly simple to set up a couple of different grids – perhaps one for login-related pages and a second for the app itself. Virtual Lobby seems fairly simple: There would be separate grid sections for the app bar, the main navigation, content, and a footer. The app bar and the footer would themselves contain flexboxes for displaying items horizontally.
+ 
+There would be some refactoring work to rip the markup out of the Pluralsight Design System <Layout> component that is currently used on most of the Virtual Lobby pages. The Layout component itself offers only the most basic of responsive functionality and seems geared toward rapid prototyping or small-scale apps. It has one built-in breakpoint (768px), and it’s not customizable in any meaningful way. It wouldn’t be a massive amount of work to move the app in its current form out of <Layout> to CSS-Grid, but it’s not trivial, either. We do use the Layout component for the main navigation and the app bar.
+ 
+Just last week, we decided to move forward with styled-components as our primary way of styling React components. Styled-components should behave well with CSS-Grid. I don’t see any problems there.
+ 
+It’s worth noting that Pluralsight Design System comes with libraries such as `post-css` and `css-next`. These libraries offer functionality such as automatic minification and vendor-prefixing and the possibility of using bleeding-edge CSS functionality. We would NEED to set up these libraries if we were using PSDS Core. But as far as I can tell, we’re not using PSDS Core at all. Core is very opinionated on topics such as typography and colors, and we would need the `post-css` classnames and variables in order to follow Core guidelines for styling. But since we’re only using PSDS Components, we don’t need to worry about setting up `post-css`.
+ 
+As far as timelines go, it’d be better to make Virtual Lobby responsive sooner rather than later. But I believe it’s also possible to add responsiveness after the MVP is complete; considering we’re halfway there already, this might be the more practical option.
+ 
+Here is some useful info if you want to learn more:
+ 
+I found this blog post about transitioning to CSS-Grid very informative and helpful:
+https://julian.is/article/css-grid-at-scale/
+ 
+Despite a title suggesting you must choose between one or the other (you don’t), this is an excellent introduction to Flexbox and Grid:
+https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412
+ 
+A good general primer on responsive design:
+https://www.designersinsights.com/designer-resources/designing-responsive-website/
+ 
+Excellent CSS Grid talk by expert Rachel Andrew:
+https://vimeo.com/266792891
+ 
+A more general discussion of the state-of-CSS by Rachel Andrew. Very current info. I recommend watching at least the first several minutes of her talk:
+https://www.youtube.com/watch?v=5XsZnCwbgwA
+ 
+This is the complete, authoritative guide to CSS-Grid:
+https://css-tricks.com/snippets/css/complete-guide-grid/
+ 
+Compatibility chart for CSS-Grid:
+https://caniuse.com/#search=css-grid
+ 
+This site gives up-to-date charts on browser market share, desktop vs. smartphone vs. tablet, device market share, and other interesting data:
+http://gs.statcounter.com/
+ 
+Pluralsight has a video tutorial:
+https://app.pluralsight.com/library/courses/building-layouts-css-grid/table-of-contents
+ 

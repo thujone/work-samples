@@ -1,0 +1,10 @@
+Category,Host Name,IP,OS,OS Confidence,Finding Risk Level,Finding (Title),CVSS Score,Finding (Description),Remedy,CVE,Exploit Available,Exploitable With,References,Port,Service,Scan Details,Patch Date,Vuln Date
+Missing OS Patches,neo-5bdaf2.company.net,192.168.40.124,Microsoft Windows XP/Microsoft Windows XP for Embedded Systems,99,Very High,Windows Service Pack Out-of-Date,10,"The remote version of Microsoft Windows has no service pack or the one installed is no longer supported.  As a result, it is likely to contain security vulnerabilities.",Install the latest service pack.,"['CVE-1999-0662', 'CVE-2003-0350', 'CVE-2003-0507', 'CVE-2007-1537']",FALSE,[],http://support.microsoft.com/lifecycle/,445,cifs,"'The remote Windows 5.1 system has Service Pack 2 applied.
+The system should have Service Pack 3 installed.",3/12/2007,7/2/2003
+Network Issues,192.168.40.51,192.168.40.51,KYOCERA Printer,100,Medium,SNMP 'GETBULK' Reflection DDoS,5,The remote SNMP daemon is responding with a large amount of data to a 'GETBULK' request with a larger than normal value for 'max-repetitions'. A remote attacker can use this SNMP server to conduct a reflected distributed denial of service attack on an arbitrary remote host.,"Disable the SNMP service on the remote host if you do not use it.
+Otherwise, restrict and monitor access to this service, and consider changing the default 'public' community string.",[],TRUE,[],"http://www.nessus.org/u?8b551b5c
+http://www.nessus.org/u?bdb53cfc",161,snmp,"'Nessus was able to determine the SNMP service can be abused in an SNMP
+Reflection DDoS attack :
+
+  Request size  (bytes) : 42
+  Response size (bytes) : 1898",,

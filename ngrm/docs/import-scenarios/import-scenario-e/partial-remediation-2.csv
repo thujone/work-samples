@@ -1,0 +1,156 @@
+Category,Host Name,IP,OS,OS Confidence,Finding Risk Level,Finding (Title),CVSS Score,Finding (Description),Remedy,CVE,Exploit Available,Exploitable With,References,Port,Service,Scan Details,Patch Date,Vuln Date
+Missing Client App Patches,192.168.100.3,192.168.100.3,Microsoft Windows Server 2012 R2 Standard,100,High,Adobe Flash Player <= 22.0.0.192 Multiple Vulnerabilities (APSB16-25),9.3,"The version of Adobe Flash Player installed on the remote Windows host is equal or prior to version 22.0.0.192. It is, therefore, affected by multiple Vulnerabilities :
+
+  - Multiple memory corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4172, CVE-2016-4175, CVE-2016-4179,     CVE-2016-4180, CVE-2016-4181, CVE-2016-4182,     CVE-2016-4183, CVE-2016-4184, CVE-2016-4185,     CVE-2016-4186, CVE-2016-4187, CVE-2016-4188,     CVE-2016-4189, CVE-2016-4190, CVE-2016-4217,     CVE-2016-4218, CVE-2016-4219, CVE-2016-4220,     CVE-2016-4221, CVE-2016-4233, CVE-2016-4234,     CVE-2016-4235, CVE-2016-4236, CVE-2016-4237,     CVE-2016-4238, CVE-2016-4239, CVE-2016-4240,     CVE-2016-4241, CVE-2016-4242, CVE-2016-4243,     CVE-2016-4244, CVE-2016-4245, CVE-2016-4246)
+
+  - Multiple use-after-free errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4173,     CVE-2016-4174, CVE-2016-4222, CVE-2016-4226,     CVE-2016-4227, CVE-2016-4228, CVE-2016-4229,     CVE-2016-4230, CVE-2016-4231, CVE-2016-4248)
+
+  - Multiple stack corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4176, CVE-2016-4177)
+
+  - A security bypass vulnerability exists that allows a     remote attacker to disclose sensitive information.
+    (CVE-2016-4178)
+
+  - Multiple type confusion errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4223,     CVE-2016-4224, CVE-2016-4225)
+
+  - An unspecified memory leak issue exists that allows an     attacker to have an unspecified impact. (CVE-2016-4232)
+
+  - A race condition exists that allows a remote attacker to     disclose sensitive information. (CVE-2016-4247)
+
+  - A heap buffer overflow condition exists that allows a     remote attacker to execute arbitrary code.
+    (CVE-2016-4249)","Upgrade to Adobe Flash Player version 22.0.0.209 or later.
+
+Alternatively, Adobe has made version 18.0.0.366 available for those installs that cannot be upgraded to the latest version.","['CVE-2016-4172', 'CVE-2016-4173', 'CVE-2016-4174', 'CVE-2016-4175', 'CVE-2016-4176', 'CVE-2016-4177', 'CVE-2016-4178', 'CVE-2016-4179', 'CVE-2016-4180', 'CVE-2016-4181', 'CVE-2016-4182', 'CVE-2016-4183', 'CVE-2016-4184', 'CVE-2016-4185', 'CVE-2016-4186', 'CVE-2016-4187', 'CVE-2016-4188', 'CVE-2016-4189', 'CVE-2016-4190', 'CVE-2016-4217', 'CVE-2016-4218', 'CVE-2016-4219', 'CVE-2016-4220', 'CVE-2016-4221', 'CVE-2016-4222', 'CVE-2016-4223', 'CVE-2016-4224', 'CVE-2016-4225', 'CVE-2016-4226', 'CVE-2016-4227', 'CVE-2016-4228', 'CVE-2016-4229', 'CVE-2016-4230', 'CVE-2016-4231', 'CVE-2016-4232', 'CVE-2016-4233', 'CVE-2016-4234', 'CVE-2016-4235', 'CVE-2016-4236', 'CVE-2016-4237', 'CVE-2016-4238', 'CVE-2016-4239', 'CVE-2016-4240', 'CVE-2016-4241', 'CVE-2016-4242', 'CVE-2016-4243', 'CVE-2016-4244', 'CVE-2016-4245', 'CVE-2016-4246', 'CVE-2016-4247', 'CVE-2016-4248', 'CVE-2016-4249']",FALSE,[],"https://helpx.adobe.com/security/products/flash-player/apsb16-25.html
+http://www.nessus.org/u?0cb17c10",445,cifs,"'Product           : ActiveX control (for Internet Explorer)
+  Path              : C:\Windows\System32\Macromed\Flash\Flash.ocx
+  Installed version : 21.0.0.242
+  Fixed version     : 22.0.0.209 / 18.0.0.366",7/12/2016,7/12/2016
+Missing Client App Patches,192.168.100.179,192.168.100.179,Microsoft Windows 7 Professional Service Pack 1,100,High,Adobe Flash Player <= 22.0.0.192 Multiple Vulnerabilities (APSB16-25),9.3,"The version of Adobe Flash Player installed on the remote Windows host is equal or prior to version 22.0.0.192. It is, therefore, affected by multiple Vulnerabilities :
+
+  - Multiple memory corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4172, CVE-2016-4175, CVE-2016-4179,     CVE-2016-4180, CVE-2016-4181, CVE-2016-4182,     CVE-2016-4183, CVE-2016-4184, CVE-2016-4185,     CVE-2016-4186, CVE-2016-4187, CVE-2016-4188,     CVE-2016-4189, CVE-2016-4190, CVE-2016-4217,     CVE-2016-4218, CVE-2016-4219, CVE-2016-4220,     CVE-2016-4221, CVE-2016-4233, CVE-2016-4234,     CVE-2016-4235, CVE-2016-4236, CVE-2016-4237,     CVE-2016-4238, CVE-2016-4239, CVE-2016-4240,     CVE-2016-4241, CVE-2016-4242, CVE-2016-4243,     CVE-2016-4244, CVE-2016-4245, CVE-2016-4246)
+
+  - Multiple use-after-free errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4173,     CVE-2016-4174, CVE-2016-4222, CVE-2016-4226,     CVE-2016-4227, CVE-2016-4228, CVE-2016-4229,     CVE-2016-4230, CVE-2016-4231, CVE-2016-4248)
+
+  - Multiple stack corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4176, CVE-2016-4177)
+
+  - A security bypass vulnerability exists that allows a     remote attacker to disclose sensitive information.
+    (CVE-2016-4178)
+
+  - Multiple type confusion errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4223,     CVE-2016-4224, CVE-2016-4225)
+
+  - An unspecified memory leak issue exists that allows an     attacker to have an unspecified impact. (CVE-2016-4232)
+
+  - A race condition exists that allows a remote attacker to     disclose sensitive information. (CVE-2016-4247)
+
+  - A heap buffer overflow condition exists that allows a     remote attacker to execute arbitrary code.
+    (CVE-2016-4249)","Upgrade to Adobe Flash Player version 22.0.0.209 or later.
+
+Alternatively, Adobe has made version 18.0.0.366 available for those installs that cannot be upgraded to the latest version.","['CVE-2016-4172', 'CVE-2016-4173', 'CVE-2016-4174', 'CVE-2016-4175', 'CVE-2016-4176', 'CVE-2016-4177', 'CVE-2016-4178', 'CVE-2016-4179', 'CVE-2016-4180', 'CVE-2016-4181', 'CVE-2016-4182', 'CVE-2016-4183', 'CVE-2016-4184', 'CVE-2016-4185', 'CVE-2016-4186', 'CVE-2016-4187', 'CVE-2016-4188', 'CVE-2016-4189', 'CVE-2016-4190', 'CVE-2016-4217', 'CVE-2016-4218', 'CVE-2016-4219', 'CVE-2016-4220', 'CVE-2016-4221', 'CVE-2016-4222', 'CVE-2016-4223', 'CVE-2016-4224', 'CVE-2016-4225', 'CVE-2016-4226', 'CVE-2016-4227', 'CVE-2016-4228', 'CVE-2016-4229', 'CVE-2016-4230', 'CVE-2016-4231', 'CVE-2016-4232', 'CVE-2016-4233', 'CVE-2016-4234', 'CVE-2016-4235', 'CVE-2016-4236', 'CVE-2016-4237', 'CVE-2016-4238', 'CVE-2016-4239', 'CVE-2016-4240', 'CVE-2016-4241', 'CVE-2016-4242', 'CVE-2016-4243', 'CVE-2016-4244', 'CVE-2016-4245', 'CVE-2016-4246', 'CVE-2016-4247', 'CVE-2016-4248', 'CVE-2016-4249']",FALSE,[],"https://helpx.adobe.com/security/products/flash-player/apsb16-25.html
+http://www.nessus.org/u?0cb17c10",445,cifs,"'Product           : Browser Plugin (for Firefox / Netscape / Opera)
+  Path              : C:\Windows\system32\Macromed\Flash\NPSWF64_22_0_0_192.dll
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366
+
+  Product           : ActiveX control (for Internet Explorer)
+  Path              : C:\Windows\system32\Macromed\Flash\Flash64_22_0_0_192.ocx
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366",7/12/2016,7/12/2016
+Missing Client App Patches,192.168.100.161,192.168.100.161,Microsoft Windows 7 Professional Service Pack 1,100,High,Adobe Flash Player <= 22.0.0.192 Multiple Vulnerabilities (APSB16-25),9.3,"The version of Adobe Flash Player installed on the remote Windows host is equal or prior to version 22.0.0.192. It is, therefore, affected by multiple Vulnerabilities :
+
+  - Multiple memory corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4172, CVE-2016-4175, CVE-2016-4179,     CVE-2016-4180, CVE-2016-4181, CVE-2016-4182,     CVE-2016-4183, CVE-2016-4184, CVE-2016-4185,     CVE-2016-4186, CVE-2016-4187, CVE-2016-4188,     CVE-2016-4189, CVE-2016-4190, CVE-2016-4217,     CVE-2016-4218, CVE-2016-4219, CVE-2016-4220,     CVE-2016-4221, CVE-2016-4233, CVE-2016-4234,     CVE-2016-4235, CVE-2016-4236, CVE-2016-4237,     CVE-2016-4238, CVE-2016-4239, CVE-2016-4240,     CVE-2016-4241, CVE-2016-4242, CVE-2016-4243,     CVE-2016-4244, CVE-2016-4245, CVE-2016-4246)
+
+  - Multiple use-after-free errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4173,     CVE-2016-4174, CVE-2016-4222, CVE-2016-4226,     CVE-2016-4227, CVE-2016-4228, CVE-2016-4229,     CVE-2016-4230, CVE-2016-4231, CVE-2016-4248)
+
+  - Multiple stack corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4176, CVE-2016-4177)
+
+  - A security bypass vulnerability exists that allows a     remote attacker to disclose sensitive information.
+    (CVE-2016-4178)
+
+  - Multiple type confusion errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4223,     CVE-2016-4224, CVE-2016-4225)
+
+  - An unspecified memory leak issue exists that allows an     attacker to have an unspecified impact. (CVE-2016-4232)
+
+  - A race condition exists that allows a remote attacker to     disclose sensitive information. (CVE-2016-4247)
+
+  - A heap buffer overflow condition exists that allows a     remote attacker to execute arbitrary code.
+    (CVE-2016-4249)","Upgrade to Adobe Flash Player version 22.0.0.209 or later.
+
+Alternatively, Adobe has made version 18.0.0.366 available for those installs that cannot be upgraded to the latest version.","['CVE-2016-4172', 'CVE-2016-4173', 'CVE-2016-4174', 'CVE-2016-4175', 'CVE-2016-4176', 'CVE-2016-4177', 'CVE-2016-4178', 'CVE-2016-4179', 'CVE-2016-4180', 'CVE-2016-4181', 'CVE-2016-4182', 'CVE-2016-4183', 'CVE-2016-4184', 'CVE-2016-4185', 'CVE-2016-4186', 'CVE-2016-4187', 'CVE-2016-4188', 'CVE-2016-4189', 'CVE-2016-4190', 'CVE-2016-4217', 'CVE-2016-4218', 'CVE-2016-4219', 'CVE-2016-4220', 'CVE-2016-4221', 'CVE-2016-4222', 'CVE-2016-4223', 'CVE-2016-4224', 'CVE-2016-4225', 'CVE-2016-4226', 'CVE-2016-4227', 'CVE-2016-4228', 'CVE-2016-4229', 'CVE-2016-4230', 'CVE-2016-4231', 'CVE-2016-4232', 'CVE-2016-4233', 'CVE-2016-4234', 'CVE-2016-4235', 'CVE-2016-4236', 'CVE-2016-4237', 'CVE-2016-4238', 'CVE-2016-4239', 'CVE-2016-4240', 'CVE-2016-4241', 'CVE-2016-4242', 'CVE-2016-4243', 'CVE-2016-4244', 'CVE-2016-4245', 'CVE-2016-4246', 'CVE-2016-4247', 'CVE-2016-4248', 'CVE-2016-4249']",FALSE,[],"https://helpx.adobe.com/security/products/flash-player/apsb16-25.html
+http://www.nessus.org/u?0cb17c10",445,cifs,"'Product           : Browser Plugin (for Firefox / Netscape / Opera)
+  Path              : C:\Windows\system32\Macromed\Flash\NPSWF64_22_0_0_192.dll
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366
+
+  Product           : ActiveX control (for Internet Explorer)
+  Path              : C:\Windows\system32\Macromed\Flash\Flash64_14_0_0_160.ocx
+  Installed version : 14.0.0.160
+  Fixed version     : 22.0.0.209 / 18.0.0.366",7/12/2016,7/12/2016
+Missing Client App Patches,192.168.70.180,192.168.70.180,Microsoft Windows 7 Professional Service Pack 1,100,High,MS16-099: Security Update for Windows Something (1234567),9.3,"The version of Adobe Flash Player installed on the remote Windows host is equal or prior to version 22.0.0.192. It is, therefore, affected by multiple Vulnerabilities :
+
+  - Multiple memory corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4172, CVE-2016-4175, CVE-2016-4179,     CVE-2016-4180, CVE-2016-4181, CVE-2016-4182,     CVE-2016-4183, CVE-2016-4184, CVE-2016-4185,     CVE-2016-4186, CVE-2016-4187, CVE-2016-4188,     CVE-2016-4189, CVE-2016-4190, CVE-2016-4217,     CVE-2016-4218, CVE-2016-4219, CVE-2016-4220,     CVE-2016-4221, CVE-2016-4233, CVE-2016-4234,     CVE-2016-4235, CVE-2016-4236, CVE-2016-4237,     CVE-2016-4238, CVE-2016-4239, CVE-2016-4240,     CVE-2016-4241, CVE-2016-4242, CVE-2016-4243,     CVE-2016-4244, CVE-2016-4245, CVE-2016-4246)
+
+  - Multiple use-after-free errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4173,     CVE-2016-4174, CVE-2016-4222, CVE-2016-4226,     CVE-2016-4227, CVE-2016-4228, CVE-2016-4229,     CVE-2016-4230, CVE-2016-4231, CVE-2016-4248)
+
+  - Multiple stack corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4176, CVE-2016-4177)
+
+  - A security bypass vulnerability exists that allows a     remote attacker to disclose sensitive information.
+    (CVE-2016-4178)
+
+  - Multiple type confusion errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4223,     CVE-2016-4224, CVE-2016-4225)
+
+  - An unspecified memory leak issue exists that allows an     attacker to have an unspecified impact. (CVE-2016-4232)
+
+  - A race condition exists that allows a remote attacker to     disclose sensitive information. (CVE-2016-4247)
+
+  - A heap buffer overflow condition exists that allows a     remote attacker to execute arbitrary code.
+    (CVE-2016-4249)","Upgrade to Adobe Flash Player version 22.0.0.209 or later.
+
+Alternatively, Adobe has made version 18.0.0.366 available for those installs that cannot be upgraded to the latest version.","['CVE-2016-4172', 'CVE-2016-4173', 'CVE-2016-4174', 'CVE-2016-4175', 'CVE-2016-4176', 'CVE-2016-4177', 'CVE-2016-4178', 'CVE-2016-4179', 'CVE-2016-4180', 'CVE-2016-4181', 'CVE-2016-4182', 'CVE-2016-4183', 'CVE-2016-4184', 'CVE-2016-4185', 'CVE-2016-4186', 'CVE-2016-4187', 'CVE-2016-4188', 'CVE-2016-4189', 'CVE-2016-4190', 'CVE-2016-4217', 'CVE-2016-4218', 'CVE-2016-4219', 'CVE-2016-4220', 'CVE-2016-4221', 'CVE-2016-4222', 'CVE-2016-4223', 'CVE-2016-4224', 'CVE-2016-4225', 'CVE-2016-4226', 'CVE-2016-4227', 'CVE-2016-4228', 'CVE-2016-4229', 'CVE-2016-4230', 'CVE-2016-4231', 'CVE-2016-4232', 'CVE-2016-4233', 'CVE-2016-4234', 'CVE-2016-4235', 'CVE-2016-4236', 'CVE-2016-4237', 'CVE-2016-4238', 'CVE-2016-4239', 'CVE-2016-4240', 'CVE-2016-4241', 'CVE-2016-4242', 'CVE-2016-4243', 'CVE-2016-4244', 'CVE-2016-4245', 'CVE-2016-4246', 'CVE-2016-4247', 'CVE-2016-4248', 'CVE-2016-4249']",FALSE,[],"https://helpx.adobe.com/security/products/flash-player/apsb16-25.html
+http://www.nessus.org/u?0cb17c10",445,cifs,"'Product           : Browser Plugin (for Firefox / Netscape / Opera)
+  Path              : C:\Windows\system32\Macromed\Flash\NPSWF64_22_0_0_192.dll
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366
+
+  Product           : ActiveX control (for Internet Explorer)
+  Path              : C:\Windows\system32\Macromed\Flash\Flash64_22_0_0_192.ocx
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366",7/12/2016,7/12/2016
+Missing Client App Patches,192.168.100.173,192.168.100.173,Microsoft Windows 7 Professional Service Pack 1,100,High,MS16-099: Security Update for Windows Something (1234567),9.3,"The version of Adobe Flash Player installed on the remote Windows host is equal or prior to version 22.0.0.192. It is, therefore, affected by multiple Vulnerabilities :
+
+  - Multiple memory corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4172, CVE-2016-4175, CVE-2016-4179,     CVE-2016-4180, CVE-2016-4181, CVE-2016-4182,     CVE-2016-4183, CVE-2016-4184, CVE-2016-4185,     CVE-2016-4186, CVE-2016-4187, CVE-2016-4188,     CVE-2016-4189, CVE-2016-4190, CVE-2016-4217,     CVE-2016-4218, CVE-2016-4219, CVE-2016-4220,     CVE-2016-4221, CVE-2016-4233, CVE-2016-4234,     CVE-2016-4235, CVE-2016-4236, CVE-2016-4237,     CVE-2016-4238, CVE-2016-4239, CVE-2016-4240,     CVE-2016-4241, CVE-2016-4242, CVE-2016-4243,     CVE-2016-4244, CVE-2016-4245, CVE-2016-4246)
+
+  - Multiple use-after-free errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4173,     CVE-2016-4174, CVE-2016-4222, CVE-2016-4226,     CVE-2016-4227, CVE-2016-4228, CVE-2016-4229,     CVE-2016-4230, CVE-2016-4231, CVE-2016-4248)
+
+  - Multiple stack corruption issues exist that allow a     remote attacker to execute arbitrary code.
+    (CVE-2016-4176, CVE-2016-4177)
+
+  - A security bypass vulnerability exists that allows a     remote attacker to disclose sensitive information.
+    (CVE-2016-4178)
+
+  - Multiple type confusion errors exist that allow a remote     attacker to execute arbitrary code. (CVE-2016-4223,     CVE-2016-4224, CVE-2016-4225)
+
+  - An unspecified memory leak issue exists that allows an     attacker to have an unspecified impact. (CVE-2016-4232)
+
+  - A race condition exists that allows a remote attacker to     disclose sensitive information. (CVE-2016-4247)
+
+  - A heap buffer overflow condition exists that allows a     remote attacker to execute arbitrary code.
+    (CVE-2016-4249)","Upgrade to Adobe Flash Player version 22.0.0.209 or later.
+
+Alternatively, Adobe has made version 18.0.0.366 available for those installs that cannot be upgraded to the latest version.","['CVE-2016-4172', 'CVE-2016-4173', 'CVE-2016-4174', 'CVE-2016-4175', 'CVE-2016-4176', 'CVE-2016-4177', 'CVE-2016-4178', 'CVE-2016-4179', 'CVE-2016-4180', 'CVE-2016-4181', 'CVE-2016-4182', 'CVE-2016-4183', 'CVE-2016-4184', 'CVE-2016-4185', 'CVE-2016-4186', 'CVE-2016-4187', 'CVE-2016-4188', 'CVE-2016-4189', 'CVE-2016-4190', 'CVE-2016-4217', 'CVE-2016-4218', 'CVE-2016-4219', 'CVE-2016-4220', 'CVE-2016-4221', 'CVE-2016-4222', 'CVE-2016-4223', 'CVE-2016-4224', 'CVE-2016-4225', 'CVE-2016-4226', 'CVE-2016-4227', 'CVE-2016-4228', 'CVE-2016-4229', 'CVE-2016-4230', 'CVE-2016-4231', 'CVE-2016-4232', 'CVE-2016-4233', 'CVE-2016-4234', 'CVE-2016-4235', 'CVE-2016-4236', 'CVE-2016-4237', 'CVE-2016-4238', 'CVE-2016-4239', 'CVE-2016-4240', 'CVE-2016-4241', 'CVE-2016-4242', 'CVE-2016-4243', 'CVE-2016-4244', 'CVE-2016-4245', 'CVE-2016-4246', 'CVE-2016-4247', 'CVE-2016-4248', 'CVE-2016-4249']",FALSE,[],"https://helpx.adobe.com/security/products/flash-player/apsb16-25.html
+http://www.nessus.org/u?0cb17c10",445,cifs,"'Product           : Browser Plugin (for Firefox / Netscape / Opera)
+  Path              : C:\Windows\system32\Macromed\Flash\NPSWF64_22_0_0_192.dll
+  Installed version : 22.0.0.192
+  Fixed version     : 22.0.0.209 / 18.0.0.366
+
+  Product           : ActiveX control (for Internet Explorer)
+  Path              : C:\Windows\system32\Macromed\Flash\Flash64_21_0_0_204.ocx
+  Installed version : 21.0.0.204
+  Fixed version     : 22.0.0.209 / 18.0.0.366",7/12/2016,7/12/2016

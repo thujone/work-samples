@@ -1,0 +1,34 @@
+Category,Host Name,IP,OS,OS Confidence,Finding Risk Level,Finding (Title),CVSS Score,Finding (Description),Remedy,CVE,Exploit Available,Exploitable With,References,Port,Service,Scan Details,Patch Date,Vuln Date
+Missing Client App Patches,192.168.0.1,192.168.0.1,Microsoft Windows 7 Professional Service Pack 1,100,Very High,VULN A: Apple QuickTime Unsupported on Windows,10,"Apple no longer supports any version of QuickTime on Windows.
+
+Lack of support implies that no new security patches for the product will be released by the vendor. As a result, it is likely to contain security vulnerabilities.
+
+Note that the last version of QuickTime released for Windows had known vulnerabilities related to processing atom indexes. A remote attacker can exploit these, by convincing a user to view a malicious website or open a crafted file, to cause heap corruption within QuickTime, resulting in the execution of arbitrary code in the context of the user or process running QuickTime.",Uninstall Apple QuickTime.,[],,[],"https://support.apple.com/HT205771
+http://www.zerodayinitiative.com/advisories/ZDI-16-242/
+http://www.zerodayinitiative.com/advisories/ZDI-16-241/
+https://www.us-cert.gov/ncas/alerts/TA16-105A",445,cifs,"'Path                : C:\Program Files (x86)\QuickTime
+  Installed version   : 7.79.80.95
+  End of support date : 2016/04/01
+  Supported versions  : None, remove QuickTime",,
+Missing Client App Patches,192.168.0.2,192.168.0.2,Microsoft Windows 7 Professional Service Pack 1,100,Very High,VULN A: Apple QuickTime Unsupported on Windows,10,"Apple no longer supports any version of QuickTime on Windows.
+
+Lack of support implies that no new security patches for the product will be released by the vendor. As a result, it is likely to contain security vulnerabilities.
+
+Note that the last version of QuickTime released for Windows had known vulnerabilities related to processing atom indexes. A remote attacker can exploit these, by convincing a user to view a malicious website or open a crafted file, to cause heap corruption within QuickTime, resulting in the execution of arbitrary code in the context of the user or process running QuickTime.",Uninstall Apple QuickTime.,[],,[],"https://support.apple.com/HT205771
+http://www.zerodayinitiative.com/advisories/ZDI-16-242/
+http://www.zerodayinitiative.com/advisories/ZDI-16-241/
+https://www.us-cert.gov/ncas/alerts/TA16-105A",445,cifs,"'Path                : C:\Program Files (x86)\QuickTime
+  Installed version   : 7.79.80.95
+  End of support date : 2016/04/01
+  Supported versions  : None, remove QuickTime",,
+Missing Client App Patches,192.168.0.3,192.168.0.3,Microsoft Windows 7 Professional Service Pack 1,100,Very High,VULN A: Apple QuickTime Unsupported on Windows,10,"Apple no longer supports any version of QuickTime on Windows.
+
+Lack of support implies that no new security patches for the product will be released by the vendor. As a result, it is likely to contain security vulnerabilities.
+
+Note that the last version of QuickTime released for Windows had known vulnerabilities related to processing atom indexes. A remote attacker can exploit these, by convincing a user to view a malicious website or open a crafted file, to cause heap corruption within QuickTime, resulting in the execution of arbitrary code in the context of the user or process running QuickTime.",Uninstall Apple QuickTime.,[],,[],"https://support.apple.com/HT205771
+http://www.zerodayinitiative.com/advisories/ZDI-16-242/
+http://www.zerodayinitiative.com/advisories/ZDI-16-241/
+https://www.us-cert.gov/ncas/alerts/TA16-105A",445,cifs,"'Path                : C:\Program Files (x86)\QuickTime
+  Installed version   : 7.79.80.95
+  End of support date : 2016/04/01
+  Supported versions  : None, remove QuickTime",,

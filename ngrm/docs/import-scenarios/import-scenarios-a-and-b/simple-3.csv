@@ -1,0 +1,24 @@
+Category,Host Name,IP,OS,OS Confidence,Finding Risk Level,Finding (Title),CVSS Score,Finding (Description),Remedy,CVE,Exploit Available,Exploitable With,References,Port,Service,Scan Details,Patch Date,Vuln Date
+Missing OS Patches,neo-5bdaf2.company.net,192.168.40.124,Microsoft Windows XP/Microsoft Windows XP for Embedded Systems,99,Very High,Windows Service Pack Out-of-Date,10,"The remote version of Microsoft Windows has no service pack or the one installed is no longer supported.  As a result, it is likely to contain security vulnerabilities.",Install the latest service pack.,"['CVE-1999-0662', 'CVE-2003-0350', 'CVE-2003-0507', 'CVE-2007-1537']",FALSE,[],http://support.microsoft.com/lifecycle/,445,cifs,"'The remote Windows 5.1 system has Service Pack 2 applied.
+The system should have Service Pack 3 installed.",3/12/2007,7/2/2003
+Network Issues,192.168.40.51,192.168.40.51,KYOCERA Printer,100,Medium,SNMP 'GETBULK' Reflection DDoS,5,The remote SNMP daemon is responding with a large amount of data to a 'GETBULK' request with a larger than normal value for 'max-repetitions'. A remote attacker can use this SNMP server to conduct a reflected distributed denial of service attack on an arbitrary remote host.,"Disable the SNMP service on the remote host if you do not use it.
+Otherwise, restrict and monitor access to this service, and consider changing the default 'public' community string.",[],TRUE,[],"http://www.nessus.org/u?8b551b5c
+http://www.nessus.org/u?bdb53cfc",161,snmp,"'Nessus was able to determine the SNMP service can be abused in an SNMP
+Reflection DDoS attack :
+
+  Request size  (bytes) : 42
+  Response size (bytes) : 1898",9/11/2018,9/11/2001
+General Issues,192.168.40.51,192.168.40.51,SonicWALL,90,Medium,SSL Certificate Cannot Be Trusted,6.4,"The server's X.509 certificate does not have a signature from a known public certificate authority.  This situation can occur in three different ways, each of which results in a break in the chain below which certificates cannot be trusted. 
+
+First, the top of the certificate chain sent by the server might not be descended from a known public certificate authority.  This can occur either when the top of the chain is an unrecognized, self-signed certificate, or when intermediate certificates are missing that would connect the top of the certificate chain to a known public certificate authority. 
+
+Second, the certificate chain may contain a certificate that is not valid at the time of the scan.  This can occur either when the scan occurs before one of the certificate's 'notBefore' dates, or after one of the certificate's 'notAfter' dates. 
+
+Third, the certificate chain may contain a signature that either didn't match the certificate's information, or could not be verified.  Bad signatures can be fixed by getting the certificate with the bad signature to be re-signed by its issuer.  Signatures that could not be verified are the result of the certificate's issuer using a signing algorithm that Nessus either does not support or does not recognize. 
+
+If the remote host is a public host in production, any break in the chain makes it more difficult for users to verify the authenticity and identity of the web server. This could make it easier to carry out man-in-the-middle attacks against the remote host.",Purchase or generate a proper certificate for this service.,[],,[],,443,www,"'The following certificate was at the top of the certificate
+chain sent by the remote host, but is signed by an unknown
+certificate authority :
+
+|-Subject : C=US/ST=California/L=Sunnyvale/O=HTTPS Management Certificate for SonicWALL (self-signed)/OU=HTTPS Management Certificate for SonicWALL (self-signed)/CN=192.168.168.168
+|-Issuer  : C=US/ST=California/L=Sunnyvale/O=HTTPS Management Certificate for SonicWALL (self-signed)/OU=HTTPS Management Certificate for SonicWALL (self-signed)/CN=192.168.168.168",4/15/2014,2/12/2012
