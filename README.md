@@ -1,5 +1,7 @@
 # work-samples
-Some code samples (EcmaScript, React, Redux, .NET Core, C#, Entity Framework, PostGreSQL) from two projects I've worked on over the last year.
+In the top level here, I've uploaded a sampling of Javascript classes (*.js) I've written from 2019-2022 for Xendee.
+
+In the directories are some older samples (EcmaScript, React, Redux, .NET Core, C#, Entity Framework, PostGreSQL) from two projects I've worked on for Presidio (NGRM cybersecurity app) from 2017-2019.
 
 ## NGRM (Next Generation Risk Management)
 
