@@ -40,3 +40,62 @@ cov_p_test = cov_p([1.5, 2.5, 3.5, 4.5, 5.5], [105.1, 105.2, 88.5, 84.5, 73.5])
 corr_r_test = corr_r([1.5, 2.5, 3.5, 4.5, 5.5], [105.1, 105.2, 88.5, 84.5, 73.5])
 
 mean_s_test, stdev_s_test, stdev_p_test, cov_s_test, cov_p_test, corr_r_test
+
+
+
+
+1. Arithmetic Mean of Sample Data
+The arithmetic mean, often simply called the average, is a measure of central tendency that sums all values in a dataset and divides by the count of these values. It's crucial because it provides a single value that represents the center point of the data. However, it can be sensitive to outliers, which can skew the mean away from the central tendency of the rest of the data. To calculate the mean of a sample dataset [4, 8, 6, 5, 3], you sum all the numbers (26) and divide by the count of numbers (5), resulting in a mean of 5.2. The mean is widely used in almost every field of study to summarize data sets with a single number, facilitating comparisons and analyses.
+
+2. Sample Standard Deviation
+The sample standard deviation quantifies the dispersion or variability of a dataset relative to its mean, indicating how spread out the data points are. It's essential for understanding the variability within a sample, helping to predict the range within which most data points fall. For instance, using the same sample data [4, 8, 6, 5, 3] with a mean of 5.2, the standard deviation measures the average distance of each data point from this mean. A higher standard deviation indicates greater variability. It's instrumental in fields such as finance to assess investment risks or in quality control processes to determine product consistency.
+
+3. Population Standard Deviation
+Similar to the sample standard deviation, the population standard deviation measures the dispersion of a population dataset. The difference lies in its calculation (dividing by 
+�
+N instead of 
+�
+−
+1
+N−1), and its application: it's used when dealing with the entire population rather than a sample. This measure provides insights into the consistency and predictability of a population's characteristics. For example, analyzing the heights of all students in a school (considered a population), the population standard deviation helps understand how students' heights vary from the average.
+
+4. Sample Covariance between Two Variables
+Sample covariance measures the directional relationship between two variables in a sample, indicating whether increases in one variable correspond to increases or decreases in the other. This metric is vital for identifying the degree to which two variables change together. For instance, comparing study time [4, 8, 6, 5, 3] hours and exam scores [60, 80, 70, 75, 65], sample covariance can help understand if more study time generally leads to higher scores. Covariance is the foundation for more refined analyses like correlation and regression, aiding in predictive modeling and decision-making.
+
+5. Population Covariance between Two Variables
+Population covariance extends the concept of sample covariance to an entire population, offering a measure of how two variables move together across the entire group. While similar in its interpretation to sample covariance, it's calculated differently and used when analyzing the complete dataset. It's essential for understanding relationships at a broader level, impacting policy-making, and comprehensive studies across various disciplines, including economics, environmental science, and public health.
+
+6. Pearson Correlation Coefficient (Pearson's R)
+The Pearson correlation coefficient, denoted as 
+�
+r, quantifies the linear relationship between two variables, ranging from -1 to 1. A value of 1 indicates a perfect positive linear relationship, -1 a perfect negative linear relationship, and 0 no linear relationship. It refines the information given by covariance by standardizing it, thus facilitating the comparison between different datasets. For example, examining the relationship between hours slept [7, 6, 8, 5, 9] and productivity scores [90, 80, 88, 70, 95] can reveal how sleep affects productivity. It's widely used in research to test hypotheses about relationships between variables.
+
+7. Variance of a Sample
+Variance measures the dispersion of a dataset by taking the average of the squared differences from the mean. While it serves a similar purpose as the standard deviation, variance provides a squared measure of dispersion, making it more sensitive to outliers. It's crucial for statistical analysis to understand the spread and variability within a sample. For example, analyzing the variance in daily sales [100, 120, 80, 110, 90] can help a business understand the stability and predictability of its income.
+
+8. Variance of a Population
+Population variance, like sample variance, measures the dispersion of data points in a population. It's calculated across the entire population, providing a foundational understanding of variability within that group. This measure is critical for comprehensively analyzing the characteristics of a population without sampling errors. It can be particularly useful in fields like epidemiology to understand the spread of health-related metrics across a population.
+
+9. Z-Score
+The z-score is a statistical measure that describes a value's relationship to the mean of a group of values, measured in terms of standard deviations. A z-score of 0 indicates the value is exactly at the mean, while a z-score of 1 or -1 indicates a value one standard deviation away from the mean. It's crucial for identifying outliers and standardizing scores to make them comparable across different datasets. For instance, converting test scores from different classes to z-scores can help compare students' performances regardless of the test's difficulty.
+
+10. Margin of Error
+The margin of error quantifies the uncertainty in a statistic derived from a sample. It's a critical concept in survey research, indicating the range within which the true population parameter is expected to lie with a certain confidence level. For example, in political polling, the margin of error can help understand the possible variation in the true support for a candidate. It's fundamental in making informed decisions based on sample data, highlighting the importance of sample size and variability in estimating population parameters.
+
+11. Coefficient of Determination (
+�
+2
+R 
+2
+ )
+The coefficient of determination, or 
+�
+2
+R 
+2
+ , measures the proportion of the variance in the dependent variable that is predictable from the independent variable(s) in a regression model. It ranges from 0 to 1, where 0 means the model explains none of the variability of the response data around its mean, and 1 means it explains all the variability. It's crucial for assessing the goodness of fit of a regression model. For example, in predicting house prices based on their sizes, 
+�
+2
+R 
+2
+  can indicate how well size predicts price. It helps researchers and analysts evaluate the effectiveness of their models in explaining the observed outcomes.
