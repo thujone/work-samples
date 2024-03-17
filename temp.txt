@@ -1,0 +1,42 @@
+# Calculate the arithmetic mean of a list of numbers
+def mean_s(n):
+    return sum(n) / len(n)
+
+# Calculate the sample standard deviation of a list of numbers
+def stdev_s(n):
+    mean = mean_s(n)
+    return (sum((x - mean) ** 2 for x in n) / (len(n) - 1)) ** 0.5
+
+# Calculate the population standard deviation of a list of numbers
+def stdev_p(n):
+    mean = mean_s(n)
+    return (sum((x - mean) ** 2 for x in n) / len(n)) ** 0.5
+
+# Calculate the sample covariance between two lists of numbers
+def cov_s(x, y):
+    mean_x = mean_s(x)
+    mean_y = mean_s(y)
+    return sum((x[i] - mean_x) * (y[i] - mean_y) for i in range(len(x))) / (len(x) - 1)
+
+# Calculate the population covariance between two lists of numbers
+def cov_p(x, y):
+    mean_x = mean_s(x)
+    mean_y = mean_s(y)
+    return sum((x[i] - mean_x) * (y[i] - mean_y) for i in range(len(x))) / len(x)
+
+# Calculate the Pearson correlation coefficient between two lists of numbers
+def corr_r(x, y):
+    stdev_x = stdev_s(x)
+    stdev_y = stdev_s(y)
+    covariance = cov_s(x, y)
+    return covariance / (stdev_x * stdev_y)
+
+# Test cases
+mean_s_test = mean_s([1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5]), mean_s([105.1, 105.2, 88.5, 84.5, 73.5])
+stdev_s_test = stdev_s([1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5]), stdev_s([105.1, 105.2, 88.5, 84.5, 73.5])
+stdev_p_test = stdev_p([1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5]), stdev_p([105.1, 105.2, 88.5, 84.5, 73.5])
+cov_s_test = cov_s([1.5, 2.5, 3.5, 4.5, 5.5], [105.1, 105.2, 88.5, 84.5, 73.5])
+cov_p_test = cov_p([1.5, 2.5, 3.5, 4.5, 5.5], [105.1, 105.2, 88.5, 84.5, 73.5])
+corr_r_test = corr_r([1.5, 2.5, 3.5, 4.5, 5.5], [105.1, 105.2, 88.5, 84.5, 73.5])
+
+mean_s_test, stdev_s_test, stdev_p_test, cov_s_test, cov_p_test, corr_r_test
